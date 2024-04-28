@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".extraVaganza">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageButton
+            android:id="@+id/imageBackButton"
+            android:layout_width="54dp"
+            android:background="@color/white"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="extraVaganzaBack"
+            android:src="@drawable/panah_kiri" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExtraVaganza"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imageBackButton"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/sistem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/judul"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Sistem"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/periode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/sistem"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Periode\nPenukaran"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/subtitle_satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sistem"
+            android:text="Pengguna mendapatkan undian\nhadiah secara reguler"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/judul"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/subtitle_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sistem"
+            android:text="Setiap akhir bulan"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/subtitle_satu"
+            android:layout_marginTop="25dp"
+            />
+
+
+        <TextView
+            android:id="@+id/penukaranBulanApril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/periode"
+            android:textSize="17sp"
+            android:text="Penukaran Bulan April"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/info_reedeem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/penukaranBulanApril"
+            android:src="@drawable/info_redeem_extra_vaganza"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/rollRedeem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redeem_roll"
+            android:layout_below="@id/info_reedeem"
+            android:layout_margin="20dp"
+            />
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btn_redeem"
+            android:onClick="btnExtraRedeem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rollRedeem"
+            android:background="@drawable/button"
+            android:text="Redeem"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:width="300dp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

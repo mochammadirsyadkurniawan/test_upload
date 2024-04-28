@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reedemVaganza"
+    android:background="#f0ecec"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+
+        <ImageButton
+            android:id="@+id/imageBackButton"
+            android:layout_width="54dp"
+            android:background="@color/white"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="landing"
+            android:src="@drawable/panah_kiri" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RedeemVaganza"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imageBackButton"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+        
+        
+        <TextView
+            android:id="@+id/royal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Royal Vaganza"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/judul"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/traveloka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/travelokaa"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/royal"
+            />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traveloka"
+            android:text="Diskon 70% Hotel Traveloka"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Liburan mudah dengan penginapan harga murah.\nMemberikan diskon segala jenis hotel / penginapan yang tersedia di aplikasi traveloka dengan tanda\n “diskon redeem aqua”. Dapatkan diskon hingga 70 persen. Berlaku untuk pengguna aplikasi traveloka. Kumpulkan poin sebanyak-banyak sesuai syarat dan ketentuan di bawah."
+            android:textAlignment="viewStart"
+            />
+
+
+        <TextView
+            android:id="@+id/syarat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:text="Diskon 70% Hotel Traveloka"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/ketentuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/syarat"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-15dp"
+            android:layout_centerHorizontal="true"
+            android:text="•	Jumlah minimal 200 poin\n•	Sudah memiliki akun di traveloka\n• Bersedia digantikan diskon yang lain jika ini\n  sudah habis\n• Penukaran bisa dilakukan kapan saja"
+            />
+
+        <ImageView
+            android:id="@+id/layout_bawah"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#f0ecec"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/ketentuan"
+            />
+
+        <TextView
+            android:id="@+id/jumlah_penukaran"
+            android:paddingEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ketentuan"
+            android:text="Jumlah Penukaran"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:drawableRight="@drawable/frame_dua"
+            />
+
+        <TextView
+            android:id="@+id/total_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumlah_penukaran"
+            android:layout_marginLeft="28dp"
+            android:text="Total Poin                                                                 400"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/redeem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="redeem Vaganza"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/total_point"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:width="350dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:background="@drawable/button_login"
+            android:onClick="btnRedeemVaganza"
+            />
+    </RelativeLayout>
+
+</ScrollView>

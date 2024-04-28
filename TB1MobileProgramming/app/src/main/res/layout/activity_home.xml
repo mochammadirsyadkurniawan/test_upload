@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/atas"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/elips"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvektor10"
+        android:layout_above="@+id/imageView12"
+        android:layout_alignEnd="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvektor9"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvektor11"
+        android:layout_alignBottom="@+id/imageView16"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvector8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvector7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvector6"
+        android:layout_above="@+id/imageView17"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landingvector3"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="356dp"
+        android:layout_height="275dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/aqua" />
+
+    <TextView
+        android:id="@+id/text_kebaikan"
+        android:text="KEBAIKAN"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewLogo"
+        android:textSize="50dp"
+        android:layout_marginTop="-40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/text_berawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="BERAWAL"
+        android:textColor="@color/white"
+        android:layout_marginTop="-25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_kebaikan"
+        android:fontFamily="@font/poppinsregular"
+        />
+
+    <TextView
+        android:id="@+id/text_dariSini"
+        android:text="DARI SINI"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_berawal"
+        android:textSize="40dp"
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/terpercaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terpercaya lebih\n dari 45 tahun"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/white"
+        android:layout_below="@id/text_dariSini"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:textSize="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_below="@id/terpercaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tombol"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:onClick="authentication"
+        android:src="@drawable/panah"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="429dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/botol"
+        />
+
+</RelativeLayout>

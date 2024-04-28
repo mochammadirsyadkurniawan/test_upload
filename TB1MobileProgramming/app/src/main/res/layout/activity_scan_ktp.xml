@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scanKTP">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageBackButton"
+            android:layout_width="54dp"
+            android:background="@color/white"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="scanKTPback"
+            android:src="@drawable/panah_kiri" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan KTP"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imageBackButton"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+
+
+
+        <ImageView
+            android:id="@+id/logo_profile_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/foto_beranda"
+            android:layout_below="@+id/judul"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/text_total_tutup_botol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Tutup Botol"
+            android:textColor="@color/black"
+            android:layout_below="@+id/logo_profile_scan"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/text_olivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_total_tutup_botol"
+            android:layout_centerHorizontal="true"
+            android:text="Olivia Gabrielle"
+            android:fontFamily="@font/poppinsextra"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="-5sp"
+            />
+
+        <TextView
+            android:id="@+id/number_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:layout_toRightOf="@id/text_olivia"
+            android:layout_marginTop="259dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_olivia"
+            android:layout_centerHorizontal="true"
+            android:textSize="11sp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="    Scan KTP untuk melanjutkan proses klaim\ntutup botol. Pastikan foto KTP terlihat dengan\njelas."
+            />
+
+        <ImageView
+            android:id="@+id/scan_ktp"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/subtitle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/scan_ktp"
+            android:onClick="scanKTPimage"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:onClick="saveKTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:layout_below="@+id/scan_ktp"
+            android:layout_marginTop="200dp"
+            android:textColor="@color/white"
+            android:width="300dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:background="@drawable/button_login" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:onClick="cancelKTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_below="@id/save"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_register"
+            android:width="300dp"
+            android:layout_marginBottom="50dp"
+            />
+
+    </RelativeLayout>
+</ScrollView>

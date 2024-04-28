@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple"
+    tools:context=".congratulationTutupBotol">
+
+
+    <ImageView
+        android:id="@+id/vector_putih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector_putih"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/vector_hijau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector_hijau"
+        />
+
+
+    <TextView
+        android:id="@+id/Selamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vector_hijau"
+        android:layout_marginTop="20dp"
+        android:text="Selamat Anda Berhasil\n  Klaim Tutup Botol🎉"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/text_klaim_tutup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Selamat"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_centerHorizontal="true"
+        android:text="Klaim tutup botol lainnya dan\n   tukarkan hadiah menarik"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gunung"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>

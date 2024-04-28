@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageButton
+        android:id="@+id/imageBackButton"
+        android:layout_width="54dp"
+        android:background="@color/white"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="authentication"
+        android:src="@drawable/panah_kiri"
+        />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imageBackButton"
+        android:fontFamily="@font/poppinsmedium"
+        />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@id/judul"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginLeft="30dp"
+        />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:width="350dp"
+        android:height="50dp"
+        android:layout_below="@id/email"
+        android:hint="Masukkan Email"
+        android:background="@drawable/button_register"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp"
+        android:drawableStart="@drawable/i"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppinsregular"
+        />
+
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputEmail"
+        android:textSize="15sp"
+        android:text="Kata Sandi"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:width="350dp"
+        android:height="50dp"
+        android:paddingLeft="50dp"
+        android:hint="Masukkan Password"
+        android:layout_below="@id/password"
+        android:background="@drawable/button_register"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/pass2"
+        android:drawableEnd="@drawable/pass"
+        android:drawablePadding="10dp"
+        android:onClick="togglePasswordVisibility"
+        android:fontFamily="@font/poppinsregular"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/register1"
+        android:layout_below="@id/inputPassword"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:width="300dp"
+        android:onClick="login"
+        />
+
+
+</RelativeLayout>

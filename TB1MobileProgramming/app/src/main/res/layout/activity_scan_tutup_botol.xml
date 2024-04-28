@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scanTutupBotol">
+
+            <ImageButton
+                android:id="@+id/imageBackButton"
+                android:layout_width="54dp"
+                android:background="@color/white"
+                android:layout_height="35dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="15dp"
+                android:onClick="landing"
+                android:src="@drawable/panah_kiri"
+                />
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Tutup Botol"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/imageBackButton"
+                android:layout_marginTop="70dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/logo_profile_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/foto_beranda"
+                android:layout_below="@+id/judul"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                />
+
+            <TextView
+                android:id="@+id/text_total_tutup_botol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Tutup Botol"
+                android:textColor="@color/black"
+                android:layout_below="@+id/logo_profile_scan"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/text_olivia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_total_tutup_botol"
+                android:layout_centerHorizontal="true"
+                android:text="Olivia Gabrielle"
+                android:fontFamily="@font/poppinsextra"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="-5sp"
+                />
+
+            <TextView
+                android:id="@+id/number_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:layout_toRightOf="@id/text_olivia"
+                android:layout_marginTop="259dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/text_setiap_kali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_olivia"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Setiap kali Anda berhasil memindai kode yang\nbelum pernah diklaim sebelumnya. Anda akan\nmenerima 1 poin."
+                />
+
+            <ImageView
+                android:id="@+id/camera_scan"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/scan_camera"
+                android:onClick="openCamera"
+                android:layout_below="@id/text_setiap_kali"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+
+    <Button
+        android:id="@+id/submit"
+        android:onClick="btnSubmitTutupBotol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:layout_below="@id/camera_scan"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:width="300dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:background="@drawable/button_login"
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:onClick="btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_register"
+        android:width="300dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reedemVaganzaPoin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageBackButton"
+            android:layout_width="54dp"
+            android:background="@color/white"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="reedemVaganzaPoin"
+            android:src="@drawable/panah_kiri" />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RedeemVaganza"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imageBackButton"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/sistem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/judul"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Sistem"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/periode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/sistem"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Periode\nPenukaran"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            />
+        
+        <TextView
+            android:id="@+id/subtitle_satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sistem"
+            android:text="Pengguna menukarkan hadiah\ndengan memilih dari katalog"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/judul"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/subtitle_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sistem"
+            android:text="Kapan saja selama periode\nprogram masih aktif"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/subtitle_satu"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/poin_anda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poin Anda                                       300"
+            android:layout_below="@+id/periode"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:width="350dp"
+            android:textSize="18sp"
+            android:background="@drawable/button_login"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinssemibold"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            />
+
+
+        <TextView
+            android:id="@+id/katalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poin_anda"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Katalog"
+            android:layout_marginLeft="20dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/voucher_traveloka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/katalog"
+            android:src="@drawable/traveloka_70"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:onClick="onViewTravelokaClicked"
+
+            />
+
+        <ImageView
+            android:id="@+id/voucher_shoope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoope_pay_100"
+            android:layout_below="@+id/katalog"
+            android:layout_toRightOf="@+id/voucher_traveloka"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/voucherFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food_gift"
+            android:layout_below="@+id/voucher_traveloka"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/voucherGoFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voucher"
+            android:layout_below="@+id/voucher_shoope"
+            android:layout_toRightOf="@+id/voucher_traveloka"
+            android:padding="10dp"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

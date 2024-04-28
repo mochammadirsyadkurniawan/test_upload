@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+        />
+    
+    <ImageView
+        android:id="@+id/logo_aqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aqua2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_below="@id/logo_aqua"
+        android:layout_marginTop="-70dp"
+        android:textColor="@color/white"
+        android:width="300dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:background="@drawable/button_login"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_below="@id/login"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_register"
+        android:width="300dp"
+        />
+
+    <TextView
+        android:id="@+id/terpercaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kebaikan Alam\nKebaikan Hidup"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/background_vektor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vektor_bakground"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:id="@+id/background_aqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aquaa"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".congratulationTutupBotol">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple"
+        />
+
+    <ImageView
+        android:id="@+id/vector_putih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector_putih"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/vector_hijau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector_hijau"
+        />
+
+
+    <TextView
+        android:id="@+id/selamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vector_hijau"
+        android:layout_marginTop="20dp"
+        android:text="Selamat Anda Mendapatkan\n  Undian ExtraVaganza🎉"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/discount"
+        android:onClick="labelDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selamat"
+        android:layout_centerHorizontal="true"
+        android:text="      Diskon 70% Hotel\n di Aplikasi Traveloka"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="15sp"
+        android:background="@drawable/discount"
+        android:layout_marginTop="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:width="230dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/gunung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gunung"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
